@@ -110,9 +110,6 @@ export const getUserApprovedVacationHistory = async (req, res) => {
     }
 }
 
-// When querying for vacation documents, we can populate the user field to retrieve the entire user object:
-// const vacations = await Vacation.find().populate('user');
-
 // Get all vacations with status "Pending" and populate the user information
 export const getApprovedVacationsWithUserInfo = async (req, res) => {
     try {
@@ -130,21 +127,6 @@ export const getApprovedVacationsWithUserInfo = async (req, res) => {
         });
     }
 };
-
-// export const getAllVacations = async (req, res) => {
-//     try {
-//         const allVacations = await Vacation.find({}).sort({ _id: -1 })
-//             .populate({
-//                 path: 'user',
-//                 select: 'name lastName email'
-//             });
-//         res.status(200).json(allVacations);
-//     } catch (error) {
-//         res.status(500).json({
-//             error: error.message
-//         });
-//     }
-// };
 
 // Update vacation status by ID
 export const updateVacationStatus = async (req, res) => {
