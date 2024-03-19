@@ -28,3 +28,4 @@ This system allows administrators or managers to oversee and approve vacation re
 
 - Admin Dashboard: When you login as an admin, you will have access to the admin dashboard where you can view pending vacation requests, approve or reject requests, view vacation statistics, etc. 
 - User Dashboard: Users can log in and submit vacation requests, view their vacation history, and view vacations of all employees on the full calendar option.
+
