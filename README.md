@@ -9,7 +9,7 @@ This system allows administrators or managers to oversee and approve vacation re
 - Approval Workflow: Admins can view pending vacation requests and take action to approve or reject them. The system provides a streamlined workflow for managing these requests. 
 - Calendar View: The system offers a calendar view to visualize approved vacations, making it easier to manage scheduling and avoid conflicts. 
 - Data Visualization: Charts and graphs are used to visualize vacation data, providing insights into employee vacations over time. 
-- Sorting and Filtering: Admins can sort and filter vacation data based on various criteria such as employee name, vacation duration, and approval status.
+- Sorting and Filtering: Admins can sort and filter vacation data based on various criteria such as employee name, and approval status.
 
 # Technologies Used 
 
