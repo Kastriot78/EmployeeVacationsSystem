@@ -1,0 +1,135 @@
+/* 
+    stroke-dasharray="100 0"  DUHET ME I NDRYSHU NESE NA DUHET per pjesen e kalter ose t gjelbert(me manovru me kto vlera). Vlera duhet me qene e njejt si ne svg ne html, si ne @keyframes psh:     @keyframes donut1 {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+
+    100% {
+        stroke-dasharray: 100 0;
+    }
+}
+----------------------------------------------------------------------------->
+    stroke-width="1.7" - per width t gray line t chartit.
+
+*/
+/* donut charts */
+@keyframes donutfade {
+
+    /* this applies to the whole svg item wrapper */
+    0% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.donut-ring {
+    stroke: #EBEBEB;
+}
+
+.donut_chart_blue .donut-segment-2 {
+    animation: donut1 3s;
+}
+
+.donut_chart_green .donut-segment-2 {
+    animation: donut_green 3s;
+}
+
+.donut_chart_green .donut-segment-2 {
+    stroke: #33CC99;
+}
+
+.donut_chart_blue .donut-segment-2 {
+    stroke: #51B0F8;
+}
+
+.segment-2 {
+    fill: aqua;
+}
+
+.donut-percent {
+    animation: donutfadelong 1s;
+}
+
+@keyframes donutfadelong {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* stroke-dasharray="100 0" - is set for the chart value in this particular SVG - 100% in this case. */
+@keyframes donut1 {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+
+    100% {
+        stroke-dasharray: 100 0;
+    }
+}
+
+@keyframes donut_green {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+
+    100% {
+        stroke-dasharray: 100 13;
+        /* because stroke-dasharray=100 13 in svg below */
+    }
+}
+
+.donut_chart .donut-text {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    fill: #FF6200;
+}
+
+.donut_chart .donut-text-1 {
+    fill: #000;
+}
+
+.donut-label {
+    font-size: 0.28em;
+    font-weight: 700;
+    line-height: 1;
+    fill: #000;
+    transform: translateY(0.25em);
+}
+
+.donut_chart .donut-percent {
+    font-size: 0.5em;
+    line-height: 1;
+    transform: translateY(0.5em);
+    font-weight: bold;
+}
+
+.donut_chart .donut-data {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.18em;
+    line-height: 1;
+    transform: translateY(0.5em);
+    text-align: center;
+    text-anchor: middle;
+    color: #4E5A6D;
+    fill: #4E5A6D;
+    animation: donutfadelong 1s;
+}
+
+/* donut charts */
+
+@media only screen and (max-width: 575px) {
+    .donut_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}

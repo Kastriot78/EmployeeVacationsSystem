@@ -1,0 +1,95 @@
+.login_wrapper .bg-image {
+    background-image: url('/public/background.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.notfound-bg-image {
+    background-image: url('/public/bg-04-not-found.png') !important;
+}
+
+.auth-form-wrapper {
+    background-color: #fff;
+}
+
+.auth_main {
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+    min-height: 100vh;
+}
+
+.login_wrapper .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.login_wrapper .form-section .title {
+    font-family: 'Poppins';
+    font-size: 28px;
+    line-height: normal;
+    font-weight: 500;
+    color: #000;
+}
+
+.login_wrapper .form-section p,
+.login_wrapper .need_account {
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #96a2b4;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.login_wrapper .form-section input {
+    height: 54px;
+    border: 1px solid #9E9E9E;
+}
+
+.login_wrapper .form-section input:focus {
+    border-color: #51B0F8;
+}
+
+.login_wrapper .already_text {
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.login_wrapper .already_text a {
+    margin-left: 8px;
+    color: #51B0F8;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login_wrapper .need_account a {
+    color: #51B0F8;
+    margin-left: 8px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 400px) {
+    .login_wrapper .form-section p {
+        font-size: 14px;
+    }
+}

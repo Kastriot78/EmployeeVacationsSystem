@@ -1,0 +1,134 @@
+.pending_vacations_card {
+    box-shadow: 8px 8px 24px 0px rgb(219 219 219);
+}
+
+.pending_vacations_card .top__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 2.25rem;
+}
+
+.pending_vacations_card .top__head_title {
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+.pending_vacations_card .top__head_title h3 {
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 600;
+    color: #071437;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.pending_vacations_card .top__head_title h4 {
+    font-size: 13px;
+}
+
+.pending_vacations_card .toolbar_wrapp {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+}
+
+.pending_vacations_card .form-select.form-select-solid {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+    color: #4B5675;
+    transition: color 0.2s ease;
+}
+
+.pending_vacations_card .form-select {
+    display: block;
+    font-size: 0.95rem;
+    border-radius: 0.425rem;
+    --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2378829D' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+    background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px 12px;
+}
+
+.pending_vacations_card .form-select:focus {
+    box-shadow: unset;
+    outline: none;
+}
+
+.form-select {
+    appearance: none;
+}
+
+.pending_vacations_card .form-control.form-control-solid {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+    color: #4B5675;
+    transition: color 0.2s ease;
+}
+
+.pending_vacations_card table {
+    clear: both;
+    max-width: none !important;
+    border-spacing: 0;
+}
+
+.pending_vacations_card table tr {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #f1f1f2;
+}
+
+.pending_vacations_card table th {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #b5b5c3;
+    font-size: 13px;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+.pending_vacations_card table td {
+    padding: 0.8rem 0;
+}
+
+.pending_vacations_card table tr .user_table_name {
+    font-size: 14px !important;
+    color: #252f4a;
+    font-weight: 600;
+}
+
+.pending_vacations_card table tr .date {
+    color: #071437;
+    font-weight: 600;
+}
+
+.pending_vacations_card .card-body {
+    padding: 2rem 2.25rem;
+}
+
+.pending_vacations_card table .btn {
+    font-size: 13px;
+    padding: 8px 17px;
+    color: #78829d;
+    font-weight: 500;
+}
+
+.pending_vacations_card table .decline-btn {
+    color: #F1416C;
+}
+
+.pending_vacations_card table .btn:focus {
+    box-shadow: unset;
+    outline: none;
+}
+
+.pending_vacations_card .dot-pulse__dot,
+.pending_vacations_card .dot-pulse::before,
+.pending_vacations_card .dot-pulse::after {
+    background-color: #000;
+}

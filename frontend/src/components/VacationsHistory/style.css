@@ -1,0 +1,115 @@
+.vacation_history_wrapp .title {
+    font-family: 'Poppins';
+    font-size: 25px;
+    line-height: 37.5px;
+    font-weight: 600;
+    color: #0C2640;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.vacation_history_wrapp .sub-title {
+    font-family: 'Poppins';
+    font-size: 18.2px;
+    line-height: 28.8px;
+    font-weight: 400;
+    color: #0C2640;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.vacation_history_wrapp .item {
+    min-width: 120px;
+    min-height: 40px;
+    background-color: #E8F7FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.vacation_history_wrapp .item span {
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #18aee3;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.vacation_history_wrapp .status_title {
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #464E5F;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.vacation_history_wrapp .status_span {
+    margin-left: 10px;
+}
+
+.vacation_history_wrapp .approved_status {
+    background-color: #33CC99;
+}
+
+.vacation_history_wrapp .declined_status {
+    background-color: #ED476E;
+}
+
+.vacation_history_wrapp .pending_status {
+    background-color: #FF3100;
+}
+
+.vacation-border-bottom {
+    border-bottom: 1px dashed #F1F1F2;
+    padding-bottom: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .vacation_history_wrapp .items_wrapper,
+    .vacation_history_wrapp .skeleton_wrap,
+    .vacation_history_wrapp .calendar_wrapper {
+        justify-content: center;
+    }
+
+    .vacation_history_wrapp .title,
+    .vacation_history_wrapp .sub-title,
+    .vacation_history_wrapp .status_title {
+        text-align: center;
+    }
+
+    .vacation_history_wrapp .status_title {
+        display: block;
+    }
+
+    .vacation_history_wrapp .calendar_wrapper {
+        margin-top: 30px;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .vacation_history_wrapp .items_wrapper {
+        flex-wrap: wrap;
+    }
+
+    /* .vacation_history_wrapp .item {
+        width: 70%;
+    } */
+
+    .vacation_history_wrapp .items_wrapper,
+    .vacation_history_wrapp .single_item_wrapper {
+        justify-content: center !important;
+    }
+}
