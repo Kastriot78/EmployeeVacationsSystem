@@ -19,6 +19,19 @@ export const createVacation = async (req, res) => {
             });
         }
 
+        const totalVacations = await Vacation.find({
+            user: user._id,
+            status: 'Approved'
+        });
+        const totalVacationDays = totalVacations.reduce((total, vacation) => total + vacation.dates.length, 0);
+        console.log(totalVacationDays);
+        // Check if the new vacation exceeds the maximum allowed days (18 in this case)
+        if (totalVacationDays + dates.length > 18) {
+            return res.status(400).json({
+                error: "You have exceeded the maximum allowed vacation days (18 days)"
+            });
+        }
+
         // Check if any existing vacations for the user have the same dates
         const existingVacations = await Vacation.find({
             user: user._id,
