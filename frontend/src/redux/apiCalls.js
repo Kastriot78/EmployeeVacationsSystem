@@ -51,10 +51,12 @@ export const register = async (user, dispatch) => {
     }
 }
 
-export const login = async (formData, dispatch) => {
+export const login = async (formData, user, dispatch) => {
     dispatch(loginStart());
     try {
-        const res = await api.post(`${apiUrl}/api/users/login`, formData);
+        const res = await axios.post(`${apiUrl}/api/users/login`, formData, {
+            headers: { Authorization: 'Bearer ' + user?.token }
+        });
         dispatch(loginSuccess(res.data));
     } catch (error) {
         dispatch(loginFailure(error?.response?.data?.error));
