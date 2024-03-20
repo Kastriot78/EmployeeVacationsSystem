@@ -20,7 +20,7 @@ const corsOptions = {
   origin: process.env.CORS_DOMAINS
 };
 
-app.use(cors(corsOptions));
+app.use(cors('*'));
 
 app.use('/api/users', userRoutes);
 app.use('/api/vacations', vacationRoutes);
@@ -37,7 +37,7 @@ mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL, {
 app.use("/images", express.static("images"));
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Vacations Tracker APP. ' + process.env.CORS_DOMAINS);
+    res.send('Welcome to Vacations Tracker API.!');
 });
 
 app.listen(port, () => {
