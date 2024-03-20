@@ -10,17 +10,14 @@ import cookieParser from 'cookie-parser';
 import userRoutes from './Routes/userRoutes.js';
 import vacationRoutes from './Routes/vacationRoutes.js';
 
+const app = express();
 const port = process.env.PORT || 5000;
 
-const app = express();
-
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-    origin: process.env.CORS_DOMAINS
+  origin: process.env.CORS_DOMAINS
 };
 
 app.use(cors(corsOptions));
@@ -40,7 +37,7 @@ mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL, {
 app.use("/images", express.static("images"));
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Vacations Tracker APP!. ' + process.env.CORS_DOMAINS);
+    res.send('Welcome to Vacations Tracker APP. ' + process.env.CORS_DOMAINS);
 });
 
 app.listen(port, () => {
