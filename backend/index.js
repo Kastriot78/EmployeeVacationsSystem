@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-    origin: 'https://employee-vacations-system.vercel.app',
+    origin: 'https://employee-vacations-system.vercel.app/',
     credentials: true
 };
 
@@ -38,7 +38,7 @@ mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL, {
 app.use("/images", express.static("images"));
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Vacations Tracker API!');
+    res.send('Employee Vacations System API.');
 });
 
 app.listen(port, () => {
