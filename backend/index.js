@@ -26,19 +26,12 @@ app.use(cors(corsOptions));
 app.use('/api/users', userRoutes);
 app.use('/api/vacations', vacationRoutes);
 
-mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => {
-    console.log('DB Connection Successfull')
-}).catch(err => {
-    console.log('Error connecting DB: ', err.message);
-});
+mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL);
 
 app.use("/images", express.static("images"));
 
 app.get('/', (req, res) => {
-    res.send('Employee Vacations System API.');
+    res.send('Employee Vacations System API!');
 });
 
 app.listen(port, () => {
