@@ -40,7 +40,7 @@ mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL, {
 app.use("/images", express.static("images"));
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Vacations Tracker APP!.');
+    res.send('Welcome to Vacations Tracker APP!. ' + process.env.CORS_DOMAINS);
 });
 
 app.listen(port, () => {
