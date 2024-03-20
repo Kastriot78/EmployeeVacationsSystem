@@ -24,7 +24,7 @@ const Login = () => {
     setErrors(errors);
 
     if (Object.keys(errors).length === 0) {
-      login(formData, dispatch);
+      login(formData, user, dispatch);
     }
   }
 
