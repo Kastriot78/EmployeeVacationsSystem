@@ -38,7 +38,7 @@ mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL, {
 app.use("/images", express.static("images"));
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Vacations Tracker API!');
+    res.send('Welcome to Vacations Tracker API..!');
 });
 
 app.listen(port, () => {
