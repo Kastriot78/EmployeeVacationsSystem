@@ -17,10 +17,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: process.env.CORS_DOMAINS
+  origin: process.env.CORS_DOMAINS,
+  credentials:true
 };
 
-app.use(cors('*'));
+app.use(cors(corsOptions));
 
 app.use('/api/users', userRoutes);
 app.use('/api/vacations', vacationRoutes);
@@ -37,7 +38,7 @@ mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL, {
 app.use("/images", express.static("images"));
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Vacations Tracker API.!');
+    res.send('Welcome to Vacations Tracker API!');
 });
 
 app.listen(port, () => {
