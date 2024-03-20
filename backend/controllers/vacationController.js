@@ -1,8 +1,8 @@
 import Vacation from '../Models/Vacation.js';
 import User from '../Models/User.js';
-import {
-    sendEmailToAdmin
-} from '../utils/sendEmail.js';
+// import {
+//     sendEmailToAdmin
+// } from '../utils/sendEmail.js';
 
 export const createVacation = async (req, res) => {
     const {
@@ -54,7 +54,7 @@ export const createVacation = async (req, res) => {
         });
 
         await newVacation.save();
-        sendEmailToAdmin(user, newVacation); // Send email to admin when a vacation is created.
+        // sendEmailToAdmin(user, newVacation); // Send email to admin when a vacation is created.
         res.status(200).json({
             vacation: newVacation,
             success: true,
