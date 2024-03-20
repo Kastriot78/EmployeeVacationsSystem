@@ -115,7 +115,7 @@ const SignUp = () => {
                             <div>
                                 <span className='already_text'>
                                     Already Registered?
-                                    <Link to="/login">Login</Link>
+                                    <Link to="/">Login</Link>
                                 </span>
                             </div>
                             <div>
