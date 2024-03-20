@@ -51,7 +51,7 @@ const SignUp = () => {
                 </div>
                 <div className="col-md-6 auth-form-wrapper">
                     <div className='form-section'>
-                        <h2 className='title'>Sign Up</h2>
+                        <h2 className='title'>Sign Up!</h2>
                         <p>Enter details to create your account</p>
                         {errorMessage && <div className="heading_error mb-4">
                             <span className='input_error m-0'>{errorMessage}</span>
