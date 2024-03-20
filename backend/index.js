@@ -31,7 +31,7 @@ mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL);
 app.use("/images", express.static("images"));
 
 app.get('/', (req, res) => {
-    res.send('Employee Vacations System API!');
+    res.send('Employee Vacations System API..');
 });
 
 app.listen(port, () => {
