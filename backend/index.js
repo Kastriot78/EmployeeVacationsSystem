@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-    origin: 'https://employee-vacations-system.vercel.app/',
+    origin: process.env.CORS_DOMAINS,
     credentials: true
 };
 
