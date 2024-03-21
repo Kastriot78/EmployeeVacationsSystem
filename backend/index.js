@@ -21,6 +21,7 @@ const corsOptions = {
     credentials: true
 };
 app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 app.use('/api/users', userRoutes);
 app.use('/api/vacations', vacationRoutes);
@@ -30,7 +31,7 @@ mongoose.connect(process.env.DB_CONNECTION_URL_LOCAL);
 app.use("/images", express.static("images"));
 
 app.get('/', (req, res) => {
-    res.send('Employee Vacations System API!! ' + process.env.CORS_DOMAINS);
+    res.send('Employee Vacations System API... ' + process.env.CORS_DOMAINS);
 });
 
 app.listen(port, () => {
