@@ -88,7 +88,8 @@ const RequestVacation = () => {
     };
 
     return (
-        <div className='request_vacation_wrapper mt-5'>
+        <div class="container">
+                    <div className='request_vacation_wrapper mt-5'>
             <h1 className='title'>Vacation Request Form</h1>
             <p className='description'>Fill in this form to request your vacation and get it quickly approved</p>
             <form action="" onSubmit={handleSubmit}>
@@ -126,6 +127,7 @@ const RequestVacation = () => {
                     </div>
                 </div>
             </form>
+        </div>
         </div>
     );
 };
