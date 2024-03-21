@@ -18,7 +18,7 @@ This system allows administrators or managers to oversee and approve vacation re
 
 # Installation 
 
-1. Clone the repository: git clone https://github.com/Kastriot78/employee-vacations-management-system.git 
+1. Clone the repository: git clone https://github.com/Kastriot78/EmployeeVacationsSystem.git
 2. Install dependencies: Frontend: cd client && npm install Backend: cd server && npm install 
 3. Configure environment variables: Create a .env file in the server directory and add necessary environment variables (CORS_DOMAINS,JWT_SECRET,DB_CONNECTION_URL_LOCAL). 
 4. Start the development servers: Frontend: cd client && npm start Backend: cd server && npm start 
